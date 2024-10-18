@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maggi Login</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      header img {
+        width: 100px;
+        height: auto;
+      }
+
+      header h1 {
+        font-size: 24px;
+        margin-left: 20px;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 120px);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+      }
+
+      button[type="submit"] {
+        background-color: #ffba00;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        margin-top: 10px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="maggi-logo.png" alt="Maggi Logo" />
+      <h1>Login to Maggiverse</h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember_me" name="remember_me" />
+          <label for="remember_me">Remember Me</label>
+        </div>
+
+        <button type="submit">Login</button>
+        <a href="#">Forgot Password?</a>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Nestle India Ltd.</p>
+    </footer>
+  </body>
+</html>
