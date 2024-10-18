@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xiaomi Product Page</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .product-showcase {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .banner {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .featured-products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Xiaomi</div>
+      <nav>
+        <ul>
+          <li>Phone</li>
+          <li>TV & Smart Home</li>
+          <li>Tablet</li>
+          <li>Lifestyle</li>
+          <li>Discover</li>
+          <li>Support</li>
+          <li>Cart</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="product-showcase">
+      <div class="product-card"></div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section class="featured-products">
+      <div class="product-card"></div>
+    </section>
+  </body>
+</html>
